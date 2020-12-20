@@ -1,0 +1,95 @@
+[class^="icon-svg"],
+[class*=" icon-svg"] {
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  mask-position: center;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 20px 20px;
+ background-color: #C0C9D8;
+ display: flex;
+}
+
+.icon-svg-customers {
+  mask-image: url(./users.svg);
+  -webkit-mask-image: url(./users.svg);
+}
+
+.icon-svg-plus {
+  mask-image: url(./plus.svg);
+  -webkit-mask-image: url(./plus.svg);
+}
+
+.icon-svg-orderleft {
+  mask-image: url(./orderleft.svg);
+  -webkit-mask-image: url(./orderleft.svg);
+}
+
+.icon-svg-sneaker {
+  mask-image: url(./sneaker.svg);
+  -webkit-mask-image: url(./sneaker.svg);
+}
+
+.icon-svg-backpack {
+  mask-image: url(./backpack.svg);
+  -webkit-mask-image: url(./backpack.svg);
+}
+
+
+.icon-svg-dress {
+  mask-image: url(./dress.svg);
+  -webkit-mask-image: url(./dress.svg);
+}
+
+
+.icon-svg-search {
+  mask-image: url(./search.svg);
+  -webkit-mask-image: url(./search.svg);
+}
+
+
+.icon-svg-head {
+  mask-image: url(./user.svg);
+  -webkit-mask-image: url(./user.svg);
+}
+
+.icon-svg-logout {
+  mask-image: url(./logout.svg);
+  -webkit-mask-image: url(./logout.svg);
+  background-color: #3F4D64;
+}
+
+.icon-svg-burger {
+  mask-image: url(./burger.svg);
+  -webkit-mask-image: url(./burger.svg);
+}
+
+.icon-svg-user {
+  mask-image: url(./head.svg);
+  -webkit-mask-image: url(./head.svg);
+}
+
+.icon-svg-orders {
+  mask-image: url(./book.svg);
+  -webkit-mask-image: url(./book.svg);
+}
+
+.icon-svg-cashier {
+  mask-image: url(./head.svg);
+  -webkit-mask-image: url(./head.svg);
+}
+
+.icon-svg-gift {
+  mask-image: url(./gift.svg);
+  -webkit-mask-image: url(./gift.svg);
+}
+
+.icon-svg-catalog {
+    mask-image: url(./stick.svg);
+    -webkit-mask-image: url(./stick.svg);
+  }
+
+.icon-svg-settings {
+  mask-image: url(./settings.svg);
+  -webkit-mask-image: url(./settings.svg);
+}
