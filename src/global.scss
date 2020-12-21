@@ -398,7 +398,11 @@
   padding-left: 25px;
   padding-right: 33px;
   border-bottom: 1px solid #e6e9ef;
-
+  &:hover{
+    background: #EFF3FF;
+    transition: all .2s;
+  }
+  cursor: pointer;
   .left {
     display: flex;
     flex-direction: column;
@@ -463,6 +467,7 @@
     }
     .icon-svg-discount {
       background: #5265cc;
+      cursor: pointer;
     }
   }
 
@@ -503,12 +508,16 @@
         height: 10px;
         mask-size: 10px !important;
         margin-left: 8px;
+        cursor: pointer;
+        background: #3f4d64;
       }
       .icon-svg-trash {
         width: 10px;
         height: 10px;
         mask-size: 10px !important;
         margin-left: 8px;
+        cursor: pointer;
+        background: #e53e3e;
       }
     }
   }
@@ -530,6 +539,5 @@
       line-height: 16px;
       color: #ffffff;
     }
-   
   }
 }
