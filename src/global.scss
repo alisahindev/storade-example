@@ -355,6 +355,7 @@
         width: 20px;
         height: 20px;
         mask-size: 20px !important;
+        cursor: pointer;
       }
     }
   }
@@ -471,6 +472,7 @@
       background: #5265cc;
       cursor: pointer;
     }
+    
   }
 
   .subtotal {
@@ -533,6 +535,10 @@
     padding: 0 30 0 30;
     background: #5265cc;
     border: none;
+    padding: 0 31px;
+    &:hover{
+      background-color: rgba(#5265CC, 0.8);
+    }
     span {
       font-family: Arial;
       font-style: normal;
@@ -540,6 +546,14 @@
       font-size: 14px;
       line-height: 16px;
       color: #ffffff;
+    }
+    span + span {
+      font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 25px;
+text-align: right;
     }
   }
 }
