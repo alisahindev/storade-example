@@ -1,18 +1,17 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Navmenu from "./Navbar/Navbar";
 import Content from "./content/Content";
+import OrderCart from "./orderCart/OrderCart";
 import "./global.scss";
 import "./icons/iconset.css";
 
 function App() {
   return (
     <Container fluid>
-      <Row>
+      <Row style={{ height: "100vh", overflow: "hidden" }}>
         <Navmenu />
-        <Col style={{ padding: "0" }}>
-          <Content />
-        </Col>
-        <Col style={{ padding: "0", maxWidth: "322px" }}>3 of 3</Col>
+        <Content />
+        <OrderCart />
       </Row>
     </Container>
   );

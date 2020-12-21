@@ -1,8 +1,8 @@
 [class^="icon-svg"],
 [class*=" icon-svg"] {
-  width: 20px;
-  height: 20px;
-  mask-size: 20px 20px;
+  width: 24px;
+  height: 24px;
+  mask-size: 24px 24px !important;
   mask-position: center;
   -webkit-mask-position: center;
   -webkit-mask-size: 20px 20px;
@@ -14,6 +14,32 @@
   mask-image: url(./users.svg);
   -webkit-mask-image: url(./users.svg);
 }
+
+.icon-svg-pencil {
+  mask-image: url(./pencil.svg);
+  -webkit-mask-image: url(./pencil.svg);
+}
+
+.icon-svg-discount {
+  mask-image: url(./discountplus.svg);
+  -webkit-mask-image: url(./discountplus.svg);
+}
+
+.icon-svg-contact {
+  mask-image: url(./contact.svg);
+  -webkit-mask-image: url(./contact.svg);
+}
+
+.icon-svg-trash {
+  mask-image: url(./trash.svg);
+  -webkit-mask-image: url(./trash.svg);
+}
+
+.icon-svg-scanner {
+  mask-image: url(./scanner.svg);
+  -webkit-mask-image: url(./scanner.svg);
+}
+
 
 .icon-svg-plus {
   mask-image: url(./plus.svg);
