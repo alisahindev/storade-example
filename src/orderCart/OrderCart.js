@@ -14,37 +14,41 @@ function OrderCart() {
       </div>
       <span className="table">TABLE 1</span>
       <div className="add-customer">
-        <span className="icon-svg-content"></span>
+        <span className="icon-svg-contact"></span>
         <span>Add Customer</span>
       </div>
       <div className="order-card">
+        <OrderItem />
+        <OrderItem />
+        <OrderItem />
         <OrderItem />
       </div>
       <div className="bill-section">
         <span className="subtotal">
           <span>Subtotal</span>
-          <span>381.35</span>
+          <span className="price">381.35</span>
         </span>
         <span className="subtotal">
           <span>Tax %18</span>
-          <span>68.65</span>
+          <span className="price">68.65</span>
         </span>
         <span className="subtotal">
-          <span>
-            Discount<span className="icon-svg-pencil"></span>
+          <span className="discount">
+            Discount (%10)
+            <span className="icon-svg-pencil"></span>
             <span className="icon-svg-trash"></span>
           </span>
-          <span>-45,00</span>
+          <span className="price">-45,00</span>
         </span>
-        <div className="add-discount">
+        <div className="subtotal add-discount">
           <span>Add Discount</span>
           <span className="icon-svg-discount"></span>
         </div>
+        <Button className="charge">
+          <span>Charge</span>
+          <span>450,00</span>
+        </Button>
       </div>
-      <Button>
-        <span>Charge</span>
-        <span>450,00</span>
-      </Button>
     </Col>
   );
 }

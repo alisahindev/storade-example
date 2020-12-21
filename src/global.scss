@@ -263,8 +263,8 @@
     justify-content: flex-start;
     overflow-y: scroll;
     column-gap: 5px;
-    transition: box-shadow .3s;
-    margin-bottom: 35px
+    transition: box-shadow 0.3s;
+    margin-bottom: 35px;
   }
 
   .card {
@@ -279,7 +279,7 @@
     max-height: 250px;
 
     &:hover {
-      box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
     }
 
     img {
@@ -301,7 +301,7 @@
       font-size: 12px;
       font-style: normal;
       color: #3f4d64;
-      border: 1px solid #E6E9EF;
+      border: 1px solid #e6e9ef;
       width: 100%;
     }
 
@@ -324,12 +324,13 @@
 .right-bar {
   padding: 0 !important;
   max-width: 322px !important;
-  border-left: 1px solid #E6E9EF;
+  border-left: 1px solid #e6e9ef;
+  height: 100%;
 
   .order-top {
     width: 100%;
     height: 47px;
-    border-bottom: 1px solid #E6E9EF;
+    border-bottom: 1px solid #e6e9ef;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,8 +340,10 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 400;
-      color: #3F4D64;
+      color: #3f4d64;
       margin-left: 22px;
+      line-height: 18px;
+      font-feature-settings: "pnum" on, "lnum" on;
     }
     .icons {
       display: flex;
@@ -348,7 +351,7 @@
       align-items: center;
       span {
         margin-right: 20px;
-        background: #3F4D64 ;
+        background: #3f4d64;
         width: 20px;
         height: 20px;
         mask-size: 20px !important;
@@ -365,16 +368,168 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #5265CC;
+    color: #5265cc;
+    margin: 0;
   }
   .add-customer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFEDEA;
-    color: #FFEDEA;
-    .icon-svg-content {
-      color: #D63838;
+    background-color: #ffedea;
+    color: #d63838;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #e6e9ef;
+    .icon-svg-contact {
+      background: #d63838;
     }
+  }
+}
+
+.order-item {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 33px;
+  border-bottom: 1px solid #e6e9ef;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    .item-name {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3f4d64;
+    }
+    .item-detail {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7588a9;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    .installment {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 11px;
+      text-align: right;
+    }
+    .item-price {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: right;
+    }
+  }
+}
+
+.bill-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .add-discount {
+    span {
+      font-family: Arial !important;
+      font-style: normal !important;
+      font-weight: bold !important;
+      font-size: 12px !important;
+      line-height: 14px !important;
+      color: #5265cc !important;
+    }
+    .icon-svg-discount {
+      background: #5265cc;
+    }
+  }
+
+  .subtotal {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 34px 0 25px;
+
+    .price {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+      color: #3f4d64;
+    }
+
+    .discount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #3f4d64;
+      .icon-svg-pencil {
+        width: 10px;
+        height: 10px;
+        mask-size: 10px !important;
+        margin-left: 8px;
+      }
+      .icon-svg-trash {
+        width: 10px;
+        height: 10px;
+        mask-size: 10px !important;
+        margin-left: 8px;
+      }
+    }
+  }
+  .charge {
+    height: 70px;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30 0 30;
+    background: #5265cc;
+    border: none;
+    span {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+   
   }
 }
