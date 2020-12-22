@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/storade-example/static/css/main.7457fa92.chunk.css",
+    "main.js": "/storade-example/static/js/main.159c9392.chunk.js",
+    "main.js.map": "/storade-example/static/js/main.159c9392.chunk.js.map",
+    "runtime-main.js": "/storade-example/static/js/runtime-main.079179b4.js",
+    "runtime-main.js.map": "/storade-example/static/js/runtime-main.079179b4.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/storade-example/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.7e5aa2c0.chunk.js": "/storade-example/static/js/2.7e5aa2c0.chunk.js",
+    "static/js/2.7e5aa2c0.chunk.js.map": "/storade-example/static/js/2.7e5aa2c0.chunk.js.map",
+    "index.html": "/storade-example/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/storade-example/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.7457fa92.chunk.css.map": "/storade-example/static/css/main.7457fa92.chunk.css.map",
+    "static/js/2.7e5aa2c0.chunk.js.LICENSE.txt": "/storade-example/static/js/2.7e5aa2c0.chunk.js.LICENSE.txt",
+    "static/media/iconset.css": "/storade-example/static/media/users.cc7ab8d1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.079179b4.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.7e5aa2c0.chunk.js",
+    "static/css/main.7457fa92.chunk.css",
+    "static/js/main.159c9392.chunk.js"
+  ]
+}
