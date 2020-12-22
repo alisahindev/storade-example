@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col } from "react-bootstrap";
 import OrderItem from "./OrderItem";
-import { useStore } from "../stores/store";
+import { useStore } from "../../stores/store";
 import { observer } from "mobx-react-lite";
 import ModalComp from "../modal/Modal";
 
@@ -41,7 +41,7 @@ const OrderCart = observer(() => {
       <div className="bill-section">
         <span className="subtotal">
           <span>Subtotal</span>
-          <span className="price">{subTotal.toFixed(2)}</span>
+          <span className="price">{subTotal?.toFixed(2)}</span>
         </span>
         <span className="subtotal">
           <span>Tax %18</span>

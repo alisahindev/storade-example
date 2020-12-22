@@ -9,7 +9,7 @@ function CardComp({ title, price, media, id, key, onClick }) {
         <Card.Img variant="top" src={`images/${media}.png`} />
         <Card.Body>
           <Card.Text>{title}</Card.Text>
-          <Card.Title>{`$ ${price}`}</Card.Title>
+          <Card.Title>{`$ ${price.toFixed(2)}`}</Card.Title>
         </Card.Body>
       </Card>
     </Col>
@@ -18,9 +18,8 @@ function CardComp({ title, price, media, id, key, onClick }) {
 
 export default CardComp;
 
-
 CardComp.defaultProps = {
   title: "",
   price: "",
-  media: ""
-}
+  media: "",
+};

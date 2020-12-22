@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SidebarData } from "./SidebarData";
-import logo from "../icons/logo.png";
-import useWindowSize from "../utils/useWindowSize";
+import logo from "../../icons/logo.png";
+import useWindowSize from "../../utils/useWindowSize";
 import { Col } from "react-bootstrap";
 
 function Navbar() {
