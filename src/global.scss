@@ -120,8 +120,15 @@
     width: 100%;
     border-top: 1px solid #3f4d64;
 
+    .mobile {
+      position: absolute;
+      right: -50px;
+      background-color: #3F4D64;
+    }
+
     span {
       margin-right: 9px;
+
     }
   }
 }

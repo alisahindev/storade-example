@@ -55,7 +55,7 @@ function Navbar() {
         })}
       </ul>
       <div className="settings">
-        <span className="icon-svg-settings"> </span>
+        <span className={`icon-svg-settings ${responsiveCls}`}> </span>
         <span>Settings</span>
       </div>
     </Col>
