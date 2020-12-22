@@ -1,16 +1,15 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import img from "../icons/image.png";
 
-function CardComp() {
+function CardComp({ title, price, media, id, key, onClick }) {
   return (
-    <Col style={{ padding: 0 }}>
-      <Card>
-        <Card.Img variant="top" src={img} />
+    <Col key={key} style={{ padding: 0 }}>
+      <Card onClick={onClick}>
+        <Card.Img variant="top" src={`images/${media}.png`} />
         <Card.Body>
-          <Card.Text>2019 Fall - Winter collection Silk Tunic</Card.Text>
-          <Card.Title>$ 49,90</Card.Title>
+          <Card.Text>{title}</Card.Text>
+          <Card.Title>{`$ ${price}`}</Card.Title>
         </Card.Body>
       </Card>
     </Col>
@@ -18,3 +17,10 @@ function CardComp() {
 }
 
 export default CardComp;
+
+
+CardComp.defaultProps = {
+  title: "",
+  price: "",
+  media: ""
+}

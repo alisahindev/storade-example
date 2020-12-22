@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import CardComp from "../card/CardComp";
+import { useStore } from "../stores/store";
+import { observer } from 'mobx-react-lite';
+import Search from "../search";
 
-function Content() {
+
+const Content = observer(() => {
+  const [active, setActive] = useState(false)
+  const { dataStore, cartStore } = useStore();
   return (
     <Col
       style={{
@@ -15,7 +21,7 @@ function Content() {
       <div className="header">
         <span className="search">
           <span className="icon-svg-search"></span>
-          <input type="text" placeholder="Search Products"></input>
+          <Search className="search-input" options={dataStore.filteredItems} onChange={(query) => dataStore.search(query)} />
         </span>
       </div>
       <div className="content">
@@ -39,22 +45,13 @@ function Content() {
           </ul>
         </div>
         <div className="card-content">
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
-          <CardComp />
+          {dataStore?.dataItems?.map(item => <CardComp onClick={() => cartStore.addItem(item.id)} key={item.id} id={item.id} title={item.title} media={item.media} price={item.price} />
+          )}
         </div>
       </div>
     </Col>
   );
-}
+});
+
 
 export default Content;

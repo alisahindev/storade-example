@@ -1,15 +1,15 @@
 import React from "react";
 
-function OrderItem() {
+function OrderItem({ title, price, media, id, key, onClick, detail, installment, onRemove }) {
   return (
-    <div className="order-item">
+    <div onClick={onRemove} className="order-item">
       <span className="left">
-        <span className="item-name">2019 Fall - Winter Collection</span>
-        <span className="item-detail">Size M, Cotton</span>
+        <span className="item-name">{title}</span>
+        <span className="item-detail">{detail}</span>
       </span>
       <span className="right">
-        <span className="installment">3x50,00</span>
-        <span className="item-price">150,00</span>
+        <span className="installment">{`${installment}x${(price / installment).toFixed(0)}`}</span>
+        <span className="item-price">{price.toFixed(2)}</span>
       </span>
     </div>
   );

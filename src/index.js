@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { store, StoreContext } from './stores/store';
+
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StoreContext.Provider value={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </StoreContext.Provider>,
   document.getElementById("root")
 );
 
